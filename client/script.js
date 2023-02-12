@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch('https://go-the-result.onrender.com/', {
+  const response = await fetch('https://gpt-qs6s.onrender.com/', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
