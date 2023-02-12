@@ -1,6 +1,10 @@
 {
+    "version": 2,
+    "name": "node-js",
+    "builds": [
+        { "src": "script.js", "use": "@vercel/node" }
+    ],
     "routes": [
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "status": 404, "dest": "/other-404.html" }
+        { "src": "/(.*)", "dest": "/script.js" }
     ]
-  }
+}
